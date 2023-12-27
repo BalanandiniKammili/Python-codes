@@ -1,0 +1,30 @@
+def Addition(x,y):
+    return x+y
+def Subtract(x,y):
+    return x-y
+def Multiply(x,y):
+    return x*y
+def Division(x,y):
+    return x//y
+def modulo(x,y):
+    return x%y
+num1=int(input("enter the first number"))
+num2=int(input("enter the second number"))
+print("1.Addition")
+print("2.Subtraction")
+print("3.Multiplication")
+print("4.Division")
+print("5.Remainder")
+choice=int(input("enter the choice from above:"))
+if choice==1:
+    print(Addition(num1,num2))
+elif choice==2:
+    print(Subtract(num1,num2))
+elif choice==3:
+    print(Multiply(num1,num2))
+elif choice==4:
+    print(Division(num1,num2))
+elif choice==5:
+    print(modulo(num1,num2))
+else:
+    print("please enter valid choice")
